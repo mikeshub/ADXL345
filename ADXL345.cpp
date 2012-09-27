@@ -36,6 +36,6 @@ void ADXL345::init(void){
   accSumZ = accSumZ >> 7;
   offsetX = accSumX;
   offsetY = accSumY;
-  offsetZ = (accSumZ + 131);
+  offsetZ = (accSumZ + GRAVITY);
 
 }

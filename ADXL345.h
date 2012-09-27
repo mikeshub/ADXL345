@@ -24,6 +24,7 @@
 #define DATAZ0 0x36
 #define DATAZ1 0x37
 #define FIFO_CTL 0x38
+#define GRAVITY 131//close for the chips I tested
 
 class ADXL345{
 	public:
