@@ -15,9 +15,9 @@ void setup(){
 
 void loop(){
   accel.read();
-  accXScaled = accel.accX * 0.07480916;
-  accYScaled = accel.accY * 0.07480916;
-  accZScaled = accel.accZ * 0.07480916;
+  accXScaled = accel.accX * 0.036981132;
+  accYScaled = accel.accY * 0.036981132;
+  accZScaled = accel.accZ * 0.036981132;
   Serial<<millis()<<","<<accXScaled<<","<<accYScaled<<","<<accZScaled<<"\r\n";
   delay(10);
 }

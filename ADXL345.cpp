@@ -16,7 +16,7 @@ void ADXL345::read(void){
 void ADXL345::init(void){
   I2c.write(ADXL435_ADDR,BW_RATE,0x0C);
   I2c.write(ADXL435_ADDR,POWER_CTL,0x08);
-  I2c.write(ADXL435_ADDR,DATA_FORMAT,0x01);
+  I2c.write(ADXL435_ADDR,DATA_FORMAT,0x0B);
   I2c.write(ADXL435_ADDR,FIFO_CTL,0x00);
   accSumX = 0;
   accSumY = 0;

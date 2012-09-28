@@ -15,7 +15,8 @@
 #define POWER_CTL 0x2D
 //00001000
 #define DATA_FORMAT 0x31
-//0x01 +/- 4g
+//0x0B full res mode
+//full res mode you must select full res and the maximum g
 
 #define DATAX0 0x32
 #define DATAX1 0x33
@@ -24,7 +25,7 @@
 #define DATAZ0 0x36
 #define DATAZ1 0x37
 #define FIFO_CTL 0x38
-#define GRAVITY 131//close for the chips I tested
+#define GRAVITY 265//close for the chips I tested
 
 class ADXL345{
 	public:
