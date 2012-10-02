@@ -4,6 +4,11 @@
 #include <Arduino.h>
 #include <I2C.h>
 
+#define OFFXSET_X 15
+#define OFFXSET_Y -17
+#define OFFXSET_Z -28
+
+
 #define ADXL435_ADDR 0x53
 
 #define OFSX 0x1E //15.6 mg/LSB (that is, 0x7F = +2 g)
@@ -11,7 +16,7 @@
 #define OFSZ 0x20
 
 #define BW_RATE 0x2C
-//00001100 - 400hz
+//00001011 - 200hz
 #define POWER_CTL 0x2D
 //00001000
 #define DATA_FORMAT 0x31
@@ -25,7 +30,6 @@
 #define DATAZ0 0x36
 #define DATAZ1 0x37
 #define FIFO_CTL 0x38
-#define GRAVITY 265//close for the chips I tested
 
 class ADXL345{
 	public:
