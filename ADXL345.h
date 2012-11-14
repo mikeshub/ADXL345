@@ -3,11 +3,12 @@
 
 #include <Arduino.h>
 #include <I2C.h>
+#include <CONFIG.h>
+#include <digitalWriteFast.h>
+#include <SPI.h>
 
-#define OFFXSET_X 15
-#define OFFXSET_Y -17
-#define OFFXSET_Z -28
-
+//#define SPI_BUS
+//#define I2C_BUS
 
 #define ADXL435_ADDR 0x53
 
@@ -31,6 +32,15 @@
 #define DATAZ1 0x37
 #define FIFO_CTL 0x38
 
+#define ACC_SS 48
+
+
+#define READ 0x80
+#define WRITE 0x00
+#define MULTI 0x40
+#define SINGLE 0x00
+
+
 class ADXL345{
 	public:
 		void init(void);
@@ -42,9 +52,6 @@ class ADXL345{
 		int32_t accSumX;
 		int32_t accSumY;
 		int32_t accSumZ;
-		int16_t offsetX;
-		int16_t offsetY;
-		int16_t offsetZ;
 		uint8_t msb;
 		uint8_t lsb;
 };

@@ -1,0 +1,24 @@
+ADXL345.h
+
+offsets
+
+
+
+LSM3032.h
+
+offsets
+
+
+
+IMU.h 
+
+scaling factors
+
+
+IMU.cpp
+
+max and min for compass
+
+Servo.h
+
+number of servos

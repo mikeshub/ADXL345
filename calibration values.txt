@@ -1,17 +1,37 @@
-xmin = -251
-xmax = 281
-offset = 15
-gravityx = 266
-scale factorx = 0.03684210526315789473684210526316
+//adxl345
+xmin = -268
+xmax = 266
+offset = -1
+gravityx = 
+scale factorx = 0.03670411985018726591760299625468
 
-ymin = -281
+ymin = -276
+ymax = 255
+offset = -11
+gravityy =
+scale factory = 0.03684210526315789473684210526316
+
+zmin = -257
+zmax = 253
+offset = -2
+gravityz = 
+scale factorz = 0.03843137254901960784313725490196
+
+//lsm303dlhc
+xmin = -258
+xmax = 241
+offset = -9
+gravityx = 
+scale factorx = 
+
+ymin = -252
 ymax = 248
-offset = -16.5 -> -17
-gravityy = 264.5 -> 265
-scale factory = 0.03698113207547169811320754716981
+offset = -2
+gravityy =
+scale factory = 
 
-zmin = -265
-zmax = 237
-offset = -28
-gravityz = 251
-scale factorz = 0.03904382470119521912350597609562
+zmin = -266
+zmax = 236
+offset = -15
+gravityz = 
+scale factorz = 
